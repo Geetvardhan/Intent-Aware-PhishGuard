@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Intent-Aware PhishGuard",
+  "description": "Intent-triggered, privacy-first phishing protection.",
+  "version": "0.1.0",
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/dom_watcher.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_title": "PhishGuard"
+  }
+}
