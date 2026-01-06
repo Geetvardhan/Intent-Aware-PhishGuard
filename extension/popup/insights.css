@@ -1,0 +1,113 @@
+/* Base */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  width: 420px;
+}
+
+.container {
+  padding: 14px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 16px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+h1 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+}
+
+/* Alert cards */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.card small {
+  font-size: 11px;
+  color: #777;
+}
+
+/* Risk badges */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.badge.high {
+  background: #dc2626;
+}
+
+.badge.medium {
+  background: #f97316;
+}
+
+/* Risk factor pills */
+.pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  border: 1px solid #ddd;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #f9fafb;
+}
+
+/* Learnings */
+.learning-list {
+  padding-left: 18px;
+  font-size: 13px;
+}
+
+.learning-list li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+  font-size: 11px;
+  color: #777;
+  text-align: center;
+}
